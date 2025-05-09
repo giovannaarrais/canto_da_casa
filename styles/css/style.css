@@ -1,9 +1,121 @@
-h2 {
-  color: red !important;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+#top-header {
+  background-color: var(--c-verde);
+  color: white;
+  height: 40px;
+}
+#top-header .menu-top li a {
+  color: white !important;
+  font-weight: 500;
+  font-size: 15px !important;
+  text-decoration: none;
+}
+#top-header .menu-top li a:hover {
+  text-decoration: underline;
+}
+#top-header article p {
+  font-size: 15px !important;
+}
+
+#menu-header {
+  height: 146px;
+  display: flex;
+  align-items: center;
+}
+#menu-header .logo img {
+  height: 101px;
+}
+#menu-header .menu .menu-top ul {
+  gap: 2.5rem;
+  border: 2px solid var(--c-laranja);
+  width: 510px;
+  height: 58px;
+  border-radius: 3rem;
+}
+#menu-header .menu .menu-top ul li a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  font-weight: 500;
+}
+#menu-header .menu .menu-top ul li a:hover {
+  text-decoration: underline;
+}
+#menu-header .icons-aux div img {
+  height: 45px;
+}
+#menu-header .icons-aux .box-search {
+  position: relative;
+}
+#menu-header .icons-aux .box-search button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#destaque {
+  background-image: url("../../assets/backgrounds/destaque.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center 60%;
+  height: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#destaque:before {
+  background-color: rgba(0, 0, 0, 0.467);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#destaque .container {
+  position: relative;
+  z-index: 10;
+}
+#destaque .container .row {
+  color: white;
+}
+#destaque .container .row h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+#destaque .container .row p {
+  font-size: 20px;
+  width: 80%;
+  font-weight: 400;
+}
+#destaque .container .row button {
+  background-color: var(--c-verde);
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 3rem;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+#destaque .container .row button:hover {
+  border: 2px solid white;
 }
 
 body {
-  background-color: black;
+  font-family: "Montserrat", sans-serif !important;
+  font-style: normal;
+}
+
+:root {
+  --c-verde: #89A666;
+  --c-laranja: #C06431;
+}
+
+ul li {
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */
