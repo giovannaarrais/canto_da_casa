@@ -1,0 +1,27 @@
+
+@use 'mixins';
+
+@use 'header';
+@use 'main';
+@use 'footer';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+    font-family: "Montserrat", sans-serif !important;
+    font-style: normal;
+    // font-family: "Playfair Display", serif;
+}
+:root{
+    --c-verde: #89A666;
+    --c-verde-escuro: #60714E;
+    --c-verde-claro: #60714e8e;
+    --c-laranja: #C06431;
+}
+
+
+ul{
+    li{
+        list-style: none;
+    }
+}
