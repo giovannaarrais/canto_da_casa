@@ -104,6 +104,86 @@
   border: 2px solid white;
 }
 
+#propaganda .box-item {
+  background-color: var(--c-laranja);
+  border-radius: 50%;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  text-decoration: none;
+  padding: 2rem;
+  transition: 0.4s;
+}
+#propaganda .box-item:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+  background-color: var(--c-verde-escuro);
+}
+#propaganda .box-item .item-img img {
+  height: 78px !important;
+  filter: invert(100%);
+}
+#propaganda .box-item .item-text p {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  text-decoration: none !important;
+}
+
+#comodos {
+  background-color: var(--c-verde-claro);
+  font-family: "Playfair Display", serif;
+  padding: 4rem;
+}
+#comodos .mosaico .comodo a {
+  position: relative;
+}
+#comodos .mosaico .comodo a .img-mosaico img {
+  height: 240px;
+  width: 100%;
+}
+#comodos .mosaico .comodo a .img-mosaico img.content-2 {
+  height: 490px;
+}
+#comodos .mosaico .comodo a .text-mosaico {
+  left: 7px;
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  bottom: 2px;
+}
+
+#ofertas .title h1 {
+  font-family: "Playfair Display", serif;
+  color: var(--c-laranja);
+  font-weight: 500;
+  font-size: 3rem;
+}
+#ofertas .item-oferta {
+  background-color: var(--c-verde-claro);
+  color: white;
+}
+#ofertas .item-oferta > div {
+  padding: 12px;
+}
+#ofertas .item-oferta .oferta-img img {
+  width: 100%;
+}
+#ofertas .item-oferta .btn-produto button {
+  background-color: white;
+  color: var(--c-verde);
+  font-weight: 500;
+  border-color: white;
+}
+#ofertas .item-oferta .btn-produto button:hover {
+  background-color: var(--c-laranja);
+  border-color: var(--c-laranja);
+  color: white;
+}
+
 body {
   font-family: "Montserrat", sans-serif !important;
   font-style: normal;
@@ -111,6 +191,8 @@ body {
 
 :root {
   --c-verde: #89A666;
+  --c-verde-escuro: #60714E;
+  --c-verde-claro: #60714e8e;
   --c-laranja: #C06431;
 }
 
