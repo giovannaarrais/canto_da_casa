@@ -2,7 +2,7 @@ footer#rodape{
     background-color: var(--c-verde-escuro);
     
     #top-rodape{
-        padding: 2rem 2rem 5rem 2rem;
+        padding: 2rem 2rem 7rem 2rem;
 
         .content{
             color: white;
@@ -55,11 +55,54 @@ footer#rodape{
                 }
             }
         }
+
+        .pagamentos{
+            .formas-pag{
+                .icon-pix{
+                    filter: invert(100%);
+                    
+                    img{
+                        margin-left: 8px;
+                        margin-top: 5px;
+                        height: 49px;
+                    }
+                }
+            }
+        }
+
+        .socias{
+            i{
+                transition: .4s ease-in-out;
+                color: white;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
     }
 
     #bottom-rodape{
         background-color: white;
-        padding: 1rem;
+        padding: 1.5rem;
         color: black;
+
+        position: relative;
+        top: -30px;
+
+        article{
+            p{
+                font-weight: 500;
+
+                a{
+                    font-weight: 600;
+                    color: black;
+                    transition: .4s;
+
+                    &:hover{
+                        color: var(--c-laranja);
+                    }
+                }
+            }
+        }
     }
 }

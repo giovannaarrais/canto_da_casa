@@ -15,7 +15,7 @@
         <div class="container d-flex justify-content-between align-items-center">
 
           <nav class="menu-top" aria-label="Top navigation">
-            <ul class="d-flex gap-4 ps-0 mb-0">
+            <ul class="d-flex gap-lg-4 gap-2 ps-0 mb-0">
               <li><a href="">Dúvidas</a></li>
               <li><a href="">Trabalhe Aqui</a></li>
               <li><a href="">Avaliações</a></li>
@@ -37,7 +37,7 @@
               <img src="assets/logo_horiz.svg" alt="">
             </div>
 
-            <div class="menu col-md-6">
+            <div class="menu col-md-6 d-none d-lg-block">
               <nav class="menu-top  d-flex justify-content-center" aria-label="Main navigation">
                 <ul class="d-flex ps-0 mb-0 justify-content-center align-items-center">
                   <li><a href="">Sala de Estar</a></li>
@@ -62,6 +62,15 @@
               </div>
             </div>
 
+            <div class="menu-mobile d-block d-lg-none col-sm-3">
+              <div class="itens-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+            </div>
+
           </div>
           </div>
       </section>
@@ -71,14 +80,14 @@
       <section id="destaque">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 dest-text">
+            <div class="col-md-6 dest-text">
               <h3>Seu espaço com alma, estilo e conforto</h3>
               <p>Sofás, mesas, estantes e muito mais com design exclusivo e entrega em todo o Brasil.</p>
               <div>
                 <button>Conheça a loja</button>
               </div>
             </div>
-            <div class="col-lg-6 dest-img">
+            <div class="col-md-6 dest-img">
               <div class="box-img">
                 <img src="assets/icons/desconto.svg" alt="">
               </div>
@@ -89,7 +98,7 @@
 
       <section id="propaganda">
         <div class="container py-5">
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between flex-wrap gap-2">
             <div class="content">
             <a href="" class="box-item d-flex flex-column justify-content-center align-items-center gap-2">
               <div class="item-img"><img src="assets/icons/price.svg" alt=""></div>
@@ -351,7 +360,7 @@
         <div class="container">
           <div class="row d-flex align-items-center">
             <article class="col-lg-7">
-              <div><img src="assets/icons/mobile.svg" alt="Icone de celular simulando comentários de clientes"></div>
+              <div class="img-comments"><img src="assets/icons/mobile.svg" alt="Icone de celular simulando comentários de clientes"></div>
             </article>
 
             <article class="col-lg-5">
@@ -442,10 +451,51 @@
             <div class="col-lg-3">
               <div class="pagamentos">
                 <a href="" class="title">Formas de Pagamento</a>
+                <div class="formas-pag mt-4">
+                  <div class="d-flex justify-content-start gap-3">
+                    <div>
+                      <img src="assets/icons/pagamento/mastercard.svg" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/icons/pagamento/visa.svg" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/icons/pagamento/diners-club.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-start gap-3">
+                    <div>
+                      <img src="assets/icons/pagamento/elo.svg" alt="">
+                    </div>
+                    <div>
+                      <img src="assets/icons/pagamento/amazon.svg" alt="">
+                    </div>
+                    <div class="icon-pix">
+                      <img src="assets/icons/pagamento/pix.svg" alt="">
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div class="socias">
+              <div class="socias mt-5">
                 <a href="" class="title">Redes Socias</a>
+                <div class="redes mt-4">
+                  <div class="d-flex justify-content-start gap-3">
+                    <div>
+                      <a href=""><i class="fa-brands fa-whatsapp pe-2 fs-2"></i></a>
+                    </div>
+                    <div>
+                      <a href=""><i class="fa-brands pe-2 fs-2 fa-linkedin"></i></a>
+                    </div>
+                    <div>
+                      <a href=""><i class="fa-brands pe-2 fs-2 fa-instagram"></i></a>
+                    </div>
+                    <div>
+                      <a href=""><i class="fa-brands pe-2 fs-2 fa-facebook"></i></a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -454,7 +504,15 @@
 
       
       <section id="bottom-rodape">
+        <div class="container d-flex justify-content-between">
+          <article>
+            <p class="mb-0">© 2025 - Canto da CasaTodos os direitos reservados.</p>
+          </article>
 
+          <article>
+            <p class="mb-0">Desenvolvido por <a href="https://www.linkedin.com/in/giovannaarrais/" target="_blank">Giovanna Arrais</a></p>
+          </article>
+        </div>
       </section>
     </footer>
 

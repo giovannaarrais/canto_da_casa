@@ -1,3 +1,7 @@
+main{
+    padding-top: 11rem;
+}
+
 #destaque{
     background-image: url('../../assets/backgrounds/destaque.jpg');
     background-repeat: no-repeat;
@@ -8,6 +12,10 @@
 
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 1199px) {
+       background-size: cover; 
+    }
 
     &:before{
         background-color: rgba(0, 0, 0, 0.467);
@@ -252,6 +260,14 @@
 
 
 #contato{
+
+    .img-comments{
+        img{
+            @media screen and (max-width: 991px) {
+                width: 500px;
+            }
+        }
+    }
     .social{
         margin-top: 5rem !important;
         .item-social{

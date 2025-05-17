@@ -1,8 +1,20 @@
+header{
+    z-index: 100;
+    top: -1px;
+    width: 100%;
+    position: fixed;
+}
+
 #top-header{
     background-color: var(--c-verde);
     color: white;
     height: 40px;
 
+    >div{
+        @media screen and (max-width: 991px) {
+            padding: 0;
+        }
+    }
     .menu-top{
         li{
           a{
@@ -10,6 +22,10 @@
             font-weight: 500;
             font-size: 15px !important;
             text-decoration: none;
+
+            @media screen and (max-width: 991px) {
+                font-size: 14px !important;
+            }
 
             &:hover{
                 text-decoration: underline;
@@ -21,6 +37,9 @@
     article{
         p{
             font-size: 15px !important;
+            @media screen and (max-width: 991px) {
+                font-size: 14px !important;
+            }
         }
     }
 }
@@ -30,10 +49,21 @@
     height: 146px;
     display: flex;
     align-items: center;
+    background-color: white;
+    border-bottom: 1px solid var(--c-laranja);
 
+    @media screen and (max-width: 991px) {
+        >div, >div .row, >div .row >div{
+            padding: 0;
+        }
+    }
     .logo{
         img{
             height: 101px;
+            
+            @media screen and (max-width: 1199px) {
+                height: 85px;
+            }
         }
     }
 
@@ -45,6 +75,10 @@
                 width: 510px;
                 height: 58px;
                 border-radius: 3rem;
+
+                @media screen and (max-width: 1199px) {
+                    gap: 1.5rem;
+                }
 
                 li{
                     a{
@@ -61,6 +95,36 @@
             }
         }
 
+    }
+
+    .menu-mobile{
+        .itens-menu{
+            position: relative;
+            transition: .5s ease-in; 
+            &:hover{
+                span{
+                    background-color: var(--c-laranja);
+                }
+            }
+            span{
+                content: '';
+                position: absolute;
+                width: 35px;
+                background-color: var(--c-verde-escuro);
+                height: 3px;
+                border-radius: 0;
+
+                
+
+                &:nth-child(1){
+                    top: 8px;
+                }
+
+                &:nth-child(3){
+                    top: -8px;
+                }
+            }
+        }
     }
 
     .icons-aux{
