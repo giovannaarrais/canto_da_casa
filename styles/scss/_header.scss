@@ -14,10 +14,18 @@ header{
         @media screen and (max-width: 991px) {
             padding: 0;
         }
+
+        @media screen and (max-width: 767px) {
+            justify-content: center !important;
+        }
     }
     .menu-top{
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+
         li{
-          a{
+            a{
             color: white !important;
             font-weight: 500;
             font-size: 15px !important;
@@ -30,7 +38,7 @@ header{
             &:hover{
                 text-decoration: underline;
             }
-          }
+            }
         }
     }
 
