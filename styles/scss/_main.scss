@@ -249,6 +249,19 @@ main{
             font-size: 3rem;
         }
     }
+    
+    .slider-oferta{
+        .slick-list{
+            padding-top: 1rem;
+
+            .slick-track{
+                .slick-slide{
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+
     .item-oferta{
         background-color: var(--c-verde-claro);
         color: white;
@@ -413,6 +426,27 @@ main{
                     background-color: var(--c-laranja);
                     border-color: var(--c-laranja);
                 }
+            }
+        }
+    }
+}
+
+.slick-dots {
+    bottom: -3rem !important;
+    li{
+        button:before {
+            font-size: 10px !important;
+            content: '' !important;
+            background-color: var(--c-verde-escuro);
+            border-radius: 3rem;
+            width: 20px !important;
+            height: 8px !important;
+        }
+
+        &.slick-active , &:hover, &:focus{
+            button:before {
+                opacity: .75;
+                background-color: var(--c-laranja) !important;
             }
         }
     }
