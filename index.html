@@ -80,14 +80,14 @@
       <section id="destaque">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 dest-text">
+            <div class="col-lg-6 dest-text">
               <h3>Seu espaço com alma, estilo e conforto</h3>
               <p>Sofás, mesas, estantes e muito mais com design exclusivo e entrega em todo o Brasil.</p>
               <div>
                 <button>Conheça a loja</button>
               </div>
             </div>
-            <div class="col-md-6 dest-img">
+            <div class="col-lg-6 dest-img d-lg-block d-none">
               <div class="box-img">
                 <img src="assets/icons/desconto.svg" alt="">
               </div>
@@ -98,7 +98,7 @@
 
       <section id="propaganda">
         <div class="container py-5">
-          <div class="d-flex justify-content-between flex-wrap gap-2">
+          <div class="d-flex justify-content-between  gap-2">
             <div class="content">
             <a href="" class="box-item d-flex flex-column justify-content-center align-items-center gap-2">
               <div class="item-img"><img src="assets/icons/price.svg" alt=""></div>
@@ -133,13 +133,13 @@
 
       <section id="comodos">
         <div class="container pb-5 pt-3">
-          <div class="title text-center text-light w-50 m-auto pb-5"><h2>Variações para deixar sua casa ainda mais confortavel</h2></div>
+          <div class="title text-center text-light  m-auto pb-5"><h2>Variações para deixar sua casa ainda mais confortavel</h2></div>
 
           <div class="mosaico">
-            <div class="d-flex gap-2">
-              <article class="comodo d-flex gap-2 col-lg-6">
+            <div class="d-flex gap-2 flex-md-row flex-column">
+              <article class="comodo comodo-1 d-flex gap-2 col-lg-6">
                 <div class="dupla d-flex  flex-column gap-2">
-                  <a href="" class="content m">
+                  <a href="" class="content ">
                   <div class="img-mosaico">
                     <img src="assets/images/sala.jpg" alt="" class="content-1">
                   </div>
@@ -165,7 +165,7 @@
                 
               </article>
 
-              <article class="comodo d-flex gap-2 flex-column col-lg-6">
+              <article class="comodo comodo-2 d-flex gap-2 flex-column col-lg-6">
                 <a href="" class="content">
                   <div class="img-mosaico">
                     <img src="assets/images/area-externa.jpg" alt="" class="content-3">
@@ -203,7 +203,7 @@
             <h1 class="mb-4">Melhores Ofertas</h1>
           </div>
           <div class="row">
-            <div class="col-lg-3 col-xxl-2">
+            <div class="col-lg-3 col-md-6 col-xxl-2">
               <div class="item-oferta rounded shadow">
                 <div class=" d-flex flex-column  ">
                   <div class="oferta-img mb-2">
@@ -359,38 +359,40 @@
       <section id="contato" class="py-5">
         <div class="container">
           <div class="row d-flex align-items-center">
-            <article class="col-lg-7">
+            <article class="col-md-7">
               <div class="img-comments"><img src="assets/icons/mobile.svg" alt="Icone de celular simulando comentários de clientes"></div>
             </article>
 
-            <article class="col-lg-5">
-              <div class="d-flex flex-column">
-                <div class="img-icons">
+            <article class="col-md-5">
+              <div class="d-flex flex-md-column flex-sm-row flex-column align-items-center justify-content-evenly">
+                <div class="img-icons order-md-1 order-2">
                   <img src="assets/icons/social-thinking.png" alt="">
                 </div>
-                <div class="social d-flex flex-wrap gap-4">
-                  <div class="item-social">
-                    <a href="" class="btn btn-success rounded-pill px-3 py-2 fw-semibold align-items-center d-flex">
-                      <i class="fa-brands fa-whatsapp pe-2 fs-2"></i> (61) 9999-9999
-                    </a>
+                <div class="social d-flex flex-row gap-md-4 gap-2 order-md-2 order-1">
+                  <div class="dupla d-flex gap-md-3 gap-2 flex-column">
+                    <div class="item-social">
+                      <a href="" class="btn btn-success rounded-pill px-3 py-2 fw-semibold align-items-center d-flex">
+                        <i class="fa-brands fa-whatsapp pe-2 fs-2"></i> (61) 9999-9999
+                      </a>
+                    </div>
+                     <div class="item-social">
+                      <a href="" class="btn btn-success rounded-pill px-3 py-2 fw-semibold align-items-center d-flex">
+                        <i class="fa-brands pe-2 fs-2 fa-linkedin"></i> cantodacasa
+                      </a>
+                    </div>
                   </div>
 
-                   <div class="item-social">
-                    <a href="" class="btn btn-success rounded-pill px-3 py-2 fw-semibold align-items-center d-flex">
-                      <i class="fa-brands pe-2 fs-2 fa-linkedin"></i> cantodacasa
-                    </a>
-                  </div>
-
-                   <div class="item-social">
-                    <a href=""  class="btn btn-success rounded-pill px-3 py-2 fw-semibold align-items-center d-flex">
-                      <i class="fa-brands pe-2 fs-2 fa-instagram"></i> @cantodacasa
-                    </a>
-                  </div>
-
-                   <div class="item-social">
-                    <a href="" class="btn btn-success rounded-pill px-3 py-2 fw-semibold align-items-center d-flex">
-                     <i class="fa-brands pe-2 fs-2 fa-facebook"></i> cantodacasa
-                    </a>
+                   <div class="dupla d-flex gap-md-3 gap-2 flex-column">
+                    <div class="item-social">
+                      <a href=""  class="btn btn-success rounded-pill px-3 py-2 fw-semibold align-items-center d-flex">
+                        <i class="fa-brands pe-2 fs-2 fa-instagram"></i> @cantodacasa
+                      </a>
+                    </div>
+                    <div class="item-social">
+                      <a href="" class="btn btn-success rounded-pill px-3 py-2 fw-semibold align-items-center d-flex">
+                        <i class="fa-brands pe-2 fs-2 fa-facebook"></i> cantodacasa
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -402,8 +404,8 @@
     <footer id="rodape">
       <section id="top-rodape">
         <div class="container">
-          <div class="content row">
-            <div class="col-lg-3">
+          <div class="content row gap-sm-0 gap-5">
+            <div class="col-lg-3 col-md-4 col-sm-6">
               <a href="" class="title">Canto da Casa</a>
               <ul class="menu">
                 <li><a href="">Sobre nós</a></li>
@@ -416,7 +418,7 @@
             </div>
 
 
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-4 col-sm-6">
               <a href="" class="title">Cômodos da Casa</a>
               <ul class="menu">
                 <li><a href="">Sala</a></li>
@@ -431,25 +433,25 @@
               </ul>
             </div>
 
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-4">
               <a href="" class="title">Meios de Contato</a>
               <ul class="menu">
                 <div class="mb-4">
                   <p>Entre em contato pelo telefone </p>
-                  <p><a href="">(61) 3333-3333</a> / <a href="" class="ms-2">(61) 3333-3333</a></p>
+                  <p><a href="">(61) 3333-3333</a> / <a href="" class="ms-xl-2">(61) 3333-3333</a></p>
                 </div>
                 
                 <div class="">
                   <p>Entre em contato pelo telefone </p>
-                  <p><a href="" >(61) 3333-3333</a> / <a href=""  class="ms-2">(61) 3333-3333</a></p>
+                  <p><a href="" >(61) 3333-3333</a> / <a href=""  class="ms-xl-2">(61) 3333-3333</a></p>
                 </div>
                 
               </ul>
             </div>
 
 
-            <div class="col-lg-3">
-              <div class="pagamentos">
+            <div class="col-lg-3 col-md-12 d-flex flex-lg-column flex-sm-row flex-column mt-lg-0 mt-4 gap-md-0 gap-5">
+              <div class="pagamentos col-sm-6">
                 <a href="" class="title">Formas de Pagamento</a>
                 <div class="formas-pag mt-4">
                   <div class="d-flex justify-content-start gap-3">
@@ -478,7 +480,7 @@
                 </div>
               </div>
 
-              <div class="socias mt-5">
+              <div class="socias mt-lg-5 col-sm-6">
                 <a href="" class="title">Redes Socias</a>
                 <div class="redes mt-4">
                   <div class="d-flex justify-content-start gap-3">
