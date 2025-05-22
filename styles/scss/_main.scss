@@ -497,6 +497,8 @@ main{
         }
 
         .btn-info-comment{
+            position: relative;
+            z-index: 2;
             button{
                 background-color: var(--c-verde-escuro);
                 border: var(--c-verde-escuro);
