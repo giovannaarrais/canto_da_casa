@@ -60,7 +60,7 @@ header{
     background-color: white;
     border-bottom: 1px solid var(--c-laranja);
 
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 991px) and (min-width: 768px) {
         >div, >div .row, >div .row >div{
             padding: 0;
         }
@@ -71,6 +71,10 @@ header{
             
             @media screen and (max-width: 1199px) {
                 height: 85px;
+            }
+
+            @media screen and (max-width: 767px) {
+                height: 75px;
             }
         }
     }
@@ -106,18 +110,53 @@ header{
     }
 
     .menu-mobile{
+            position: relative;
+            top: 0;
+            height: 40px;
+            width: 39px;
+
+            @media screen and (max-width: 575px) {
+                width: 60px ;
+                right: 1rem;
+            }
+
+        &.active{
+            .itens-menu{
+                span{
+                    
+                    &:nth-child(1){
+                        transform: rotate(45deg);
+                        top: 0;
+                    }
+
+                    &:nth-child(2){
+                        transform: rotate(135deg);
+                        top: 0;
+                    }
+
+                    &:nth-child(3){
+                        display: none;
+                    }
+                }
+            }
+        }
+
         .itens-menu{
             position: relative;
             transition: .5s ease-in; 
+            top: 20px;
+            cursor: pointer;
             &:hover{
                 span{
                     background-color: var(--c-laranja);
                 }
             }
             span{
+                transition: .3s ease-in-out;
                 content: '';
                 position: absolute;
                 width: 35px;
+                right: 0;
                 background-color: var(--c-verde-escuro);
                 height: 3px;
                 border-radius: 0;
@@ -136,6 +175,22 @@ header{
     }
 
     .icons-aux{
+
+        @media screen and (max-width: 575px) {
+                background: white;
+                margin: auto;
+                border-radius: 3rem;
+                border: 2px solid var(--c-laranja);
+                margin-top: 1rem;
+                justify-content: space-around !important;
+                width: 80%;
+                position: relative;
+                top: 17px;
+
+                img{
+                    height: 35px !important;
+                }
+        }
         div{
             img{
                 height: 45px;
@@ -153,3 +208,18 @@ header{
     }
 }
 
+
+#canvas-menu{
+    left: 0;
+    bottom: -40px;
+    background-color: #fffffff2;
+    position: fixed;
+    visibility: hidden;
+    width: 60%;
+    height: 100%;
+    z-index: 110;
+
+    &.active{
+        visibility: visible;
+    }
+}
