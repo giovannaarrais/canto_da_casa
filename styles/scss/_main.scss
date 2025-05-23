@@ -554,3 +554,74 @@ main{
         }
     }
 }
+
+
+.itens-collapse{
+    position: relative;
+    #searchContainer{
+        position: fixed;
+        width: 100%;
+        z-index: 80 !important;
+        border-radius: 0 !important;
+
+        input{
+            border-radius: 3rem !important;
+            height: 60px;
+            border: 2px solid var(--c-verde-escuro);
+        }
+        button{
+            position: absolute;
+            background-color: var(--c-verde-escuro);
+            border-color: var(--c-verde-escuro);
+            right: 10px;
+            top: 0;
+            height: 60px;
+            width: 150px;
+
+            @media screen and (max-width: 575px) {
+                font-size: 0;
+                width: auto;
+                padding: 0 2rem;
+                
+                &:before{
+                    content: '\f002';
+                    font-family: 'Font Awesome 6 Free';
+                    font-weight: 900;
+                    line-height: 60px;
+                    font-size: 20px;
+                    position: absolute;
+                    top: 0;
+                    right: 20px;            
+                }
+            }
+
+            &:hover{
+                background-color: var(--c-laranja);
+                border-color: var(--c-laranja);
+            }
+            
+        }
+    }
+}
+
+.modal{
+    .modal-header{
+        color: white;
+        background: var(--c-laranja);
+    }
+    input, button{
+        border-radius: 3rem !important;
+    }
+
+    .send{
+        background-color: var(--c-verde) !important;
+        border-color: var(--c-verde) !important;
+    }
+    input, textarea{
+        border-radius: .5rem;
+        border: 2px solid var(--c-verde-escuro);
+        width: 100%;
+        padding: .8rem 1rem;
+    }
+    
+}
