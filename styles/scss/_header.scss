@@ -329,8 +329,18 @@ header{
                     .submenu{
                         display: none !important;
 
+                        a{
+                            transition: .4s;
+                        }
+                        a:hover{
+                            text-decoration: underline;
+                            transform: translateX(10px);
+                        }
+
                         &.show{
                             display: flex !important;
+
+                            animation: animacaoCanvas 0.3s linear forwards;
                             
                         }
                     }
