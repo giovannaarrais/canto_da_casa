@@ -21,26 +21,56 @@
 </head>
 <body>
     <div id="canvas-menu">
-      <div class="container">
-          <div class="canvas-header d-flex justify-content-between align-items-center">
-            <div class="logo w-50">
-              <img src="assets/logo_horiz.svg" alt="" class="w-50">
-            </div>
-
-             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-
-         
-        <div class="offcanvas-body p-4">
-          <nav class="menu-top" aria-label="Main navigation">
-            <ul class="d-flex flex-column ps-0 mb-0">
-              <li><a href="">Sala de Estar</a></li>
-              <li><a href="">Cozinha</a></li>
-              <li><a href="">Quartos</a></li>
-              <li><a href="">Área Externa</a></li>
-            </ul>
-          </nav>
+      <div class="canvas-header d-flex justify-content-between align-items-center">
+        <div class="options d-flex p-md-4 px-1 py-3 gap-md-4 gap-2">
+          <div><a href=""><img src="assets/icons/cart.svg" alt="">Meu carrinho</a></div>
+          <div><a href=""><img src="assets/icons/heart.svg" alt="">Meus Favoritos</a></div>
         </div>
+        
+        <div class="box-close">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+      </div>
+      
+      <div class="offcanvas-body p-4">
+        <nav class="menu-top" aria-label="Main navigation">
+          <ul class="ps-0">
+            <li class="mb-3">
+              <a href="#collapsePrimary" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapsePrimary">
+                Sala de Estar 
+                <i class="fa-solid fa-circle-chevron-down"></i></a>
+              <div class="submenu collapse d-flex flex-column ps-3 mt-1" id="collapsePrimary">
+                <a href="#sofa">Sofá</a>
+                <a href="#tv">TV</a>
+                <a href="#decoracao">Decoração</a>
+              </div>
+            </li>
+            <li class="mb-3">
+              <a  href="#collapseSecondary" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseSecondary">Cozinha <i class="fa-solid fa-circle-chevron-down"></i></a>
+              <div class="submenu collapse d-flex flex-column ps-3 mt-1" id="collapseSecondary">
+                <a href="#eletrodomesticos">Eletrodomésticos</a>
+                <a href="#armarios">Armários</a>
+                <a href="#dispensa">Despensa</a>
+              </div>
+            </li>
+            <li class="mb-3">
+              <a  href="#collapseThree" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseThree">Quartos <i class="fa-solid fa-circle-chevron-down"></i></a>
+              <div class="submenu collapse d-flex flex-column ps-3 mt-1" id="collapseThree">
+                <a href="#casal">Quarto Casal</a>
+                <a href="#infantil">Quarto Infantil</a>
+                <a href="#hospedes">Quarto de Hóspedes</a>
+              </div>
+            </li>
+            <li class="mb-3">
+              <a  href="#collapseFour" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseFour">Área Externa <i class="fa-solid fa-circle-chevron-down"></i></a>
+              <div class="submenu collapse d-flex flex-column ps-3 mt-1" id="collapseFour">
+                <a href="#jardim">Jardim</a>
+                <a href="#churrasqueira">Churrasqueira</a>
+                <a href="#piscina">Piscina</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
 
