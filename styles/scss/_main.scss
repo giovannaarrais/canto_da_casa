@@ -152,7 +152,9 @@ main{
     background-color: var(--c-verde-claro);
     font-family: "Playfair Display", serif;
     padding: 4rem;
-
+    @media screen and (max-width: 991px) {
+        padding: 1rem;
+    }
     .tilte{
 
         @media screen and (min-width: 992px) {
@@ -176,6 +178,9 @@ main{
     }
     .mosaico{
         .comodo{
+            @media screen and (max-width: 575px) {
+                flex-direction: column !important;
+            }
             a{
                 position: relative;
 
@@ -194,7 +199,8 @@ main{
                     }
 
                     @media screen and (max-width: 575px) {
-                        height: 190px;
+                        height: 120px !important;
+                        width: 100% !important;
                     }
 
 
@@ -225,14 +231,17 @@ main{
                 font-size: 30px;
                 bottom: 2px;
 
+                @media screen and (max-width: 1199px) {
+                    font-size: 21px;
+                }
                 @media screen and (max-width: 991px) {
-                    font-size: 20px;
+                    font-size: 17px;
                 }
             }
 
             .dupla {
                 @media screen and (max-width: 575px) {
-                    flex-direction: row !important;
+                    flex-direction: column !important;
                 }
             }
         }
