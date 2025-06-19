@@ -464,7 +464,7 @@ main {
   position: relative;
 }
 #comodos .mosaico .comodo a .img-mosaico img {
-  height: 240px;
+  height: 244px;
   width: 100%;
   object-fit: cover;
 }
@@ -485,7 +485,7 @@ main {
   }
 }
 #comodos .mosaico .comodo a .img-mosaico img.content-2 {
-  height: 490px;
+  height: 497px;
 }
 @media screen and (max-width: 991px) {
   #comodos .mosaico .comodo a .img-mosaico img.content-2 {
