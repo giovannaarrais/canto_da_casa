@@ -22,3 +22,8 @@
 ## 📑 Protótipo
 
 O layout foi desenhado no **Figma**, onde foram definidos os componentes, paleta de cores, tipografia e estrutura de seções.
+<br>
+Figma: <a href="https://www.figma.com/proto/IalZ38c1P0XQQmpoxj9UOr/Loja-de-Moveis?node-id=4-3&t=3Jz5zGiMZ0vy6cYn-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"> Acessar</a>
+<br>
+Site: <a href="https://canto-da-casa.vercel.app/">Acessar</a>
+
