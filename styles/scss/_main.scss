@@ -297,7 +297,9 @@ main{
 
         .oferta-img{
             img{
+                object-fit: cover;
                 width: 100%;
+                height: 200px;
             }
         }
         .infos{
@@ -333,7 +335,7 @@ main{
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 700px;
+    height: 650px;
     
     .element{
         position: absolute;
